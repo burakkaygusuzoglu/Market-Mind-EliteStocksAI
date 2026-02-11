@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MarketMind 🚀
 
-## Getting Started
+MarketMind is a premium, real-time stock market intelligence dashboard built for the modern investor. It provides institutional-grade data, advanced charting, and breaking news in a high-performance, dark-mode interface.
 
-First, run the development server:
+![MarketMind Dashboard](https://via.placeholder.com/1200x600?text=MarketMind+Dashboard+Preview)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+-   **Real-Time Data**: Live price updates for Stocks, ETFs, Indices, and Crypto.
+-   **Advanced Charting**: Interactive candles, sparklines, and volume data with 1-minute resolution.
+-   **Financial Deep Dives**: Key metrics including P/E Ratio, Market Cap, Beta, and EPS.
+-   **Aggregated News**: Breaking headlines from top financial sources (Bloomberg, CNBC, Reuters).
+-   **Watchlist**: Personalized, persistent watchlist with performance tracking.
+-   **Global Coverage**: Track major indices (S&P 500, Nasdaq) and crypto (BTC, ETH).
+-   **Responsive Design**: A seamless experience across desktop, tablet, and mobile.
+
+## 🛠️ Tech Stack
+
+-   **Frontend**: [Next.js 14](https://nextjs.org/) (App Router), [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/) (Animations)
+-   **Data Fetching**: [SWR](https://swr.vercel.app/) (Stale-While-Revalidate caching)
+-   **Charts**: [Recharts](https://recharts.org/)
+-   **API**: Integrated with **Finnhub** for reliable market data.
+-   **Icons**: [Lucide React](https://lucide.dev/)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+-   Node.js 18+
+-   npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/yourusername/marketmind.git
+    cd marketmind
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment**
+    Create a `.env.local` file in the root directory and add your Finnhub API key:
+    ```env
+    FINNHUB_API_KEY=your_api_key_here
+    ```
+
+4.  **Run the Development Server**
+    ```bash
+    npm run dev
+    ```
+
+    Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📂 Project Structure
+
+```
+├── src/
+│   ├── app/
+│   │   ├── api/            # Server-side API Proxies (Secure)
+│   │   ├── components/     # Reusable UI Components
+│   │   ├── hooks/          # Custom React Hooks
+│   │   ├── lib/            # Utilities & Helpers
+│   │   └── page.tsx        # Dashboard Entry Point
+│   └── ...
+├── public/                 # Static Assets
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔒 Security Note
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This application uses a BFF (Backend-for-Frontend) architecture to securely proxy API requests. Your Finnhub API key is never exposed to the client-side browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT Logic](LICENSE).
