@@ -1,8 +1,12 @@
+<img width="1263" height="698" alt="image" src="https://github.com/user-attachments/assets/e39099a8-bc93-4130-b818-6cf236c3ebc5" />
+
+
+
 # MarketMind 🚀
 
 MarketMind is a premium, real-time stock market intelligence dashboard built for the modern investor. It provides institutional-grade data, advanced charting, and breaking news in a high-performance, dark-mode interface.
 
-![MarketMind Dashboard](https://via.placeholder.com/1200x600?text=MarketMind+Dashboard+Preview)
+
 
 ## ✨ Features
 
